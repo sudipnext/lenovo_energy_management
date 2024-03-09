@@ -1,27 +1,60 @@
-# lenovo_energy_management
-I don't have the energy management tool in Linux, so I created one for myself.
+# Lenovo Energy Management Unofficial (Linux)
 
-## How to Run?
+This is an unofficial Lenovo Energy Management tool for Linux, created out of the necessity for such a tool on the platform.a
 
-1. Clone the repo:
-```
-git clone https://github.com/sudipnext/lenovo_energy_management.git
-```
+![Lenovo Energy Management Unofficial](./energymanagement.png)
+## Tested Models
 
-2. Open a terminal.
-Navigate to the dist folder:
-```
-cd lenovo_energy_management/dist
-```
-3. Give execution permissions to the application:
-```
-chmod +x conservation
-```
-4. Run the application:
+| Model Name | Conservation Mode | Rapid Charge Mode | User-Friendly Interface | Tested |
+| --- | --- | --- | --- | --- |
+| Lenovo Ideapad Gaming 3 Ryzen 5 5600H | ✅ | 🔄 | ✅ | ✅ |
 
-```
-./conservation
-```
-Unofficial Lenovo Energy Mangement Utility
+## Symbols in the Table
 
-@sudipnext created with  ❤️
+- ✅: The feature is currently working.
+- 🔄: The feature is planned for future releases.
+- ❌: The feature is not available for the specific model.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine.
+
+### Prerequisites
+
+Ensure you have `git` installed on your machine to clone the repository.
+
+### Installation
+
+1. **Clone the repository**
+
+    Open a terminal and run the following git command:
+    ```bash
+    git clone https://github.com/sudipnext/lenovo_energy_management.git
+    ```
+
+2. **Navigate to the application directory**
+
+    Change your current directory to the project's `dist` folder:
+    ```bash
+    cd lenovo_energy_management/dist
+    ```
+
+3. **Grant execution permissions**
+
+    You need to give execution permissions to the application:
+    ```bash
+    chmod +x conservation
+    ```
+
+4. **Run the application**
+
+    Now, you can run the application:
+    ```bash
+    ./conservation
+    ```
+
+## Author
+
+- [@sudipnext](https://github.com/sudipnext) - Initial work
+
+Built with ❤️ for Linux users.
