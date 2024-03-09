@@ -1,0 +1,20 @@
+lsmod | grep ideapad_laptop
+-results as
+ideapad_laptop         57344  0
+sparse_keymap          12288  1 ideapad_laptop
+platform_profile       12288  1 ideapad_laptop
+video                  73728  3 amdgpu,ideapad_laptop,nvidia_modeset
+wmi                    40960  3 video,wmi_bmof,ideapad_laptop
+
+ls /sys/bus/platform/drivers/ideapad_acpi/
+gives the right path for your device model and output like this 
+bind  module  uevent  unbind  VPC2004:00
+
+sudipnext@sudipnext:~$ cat /sys/bus/platform/drivers/ideapad_acpi/VPC2004\:00/conservation_mode 
+0
+
+echo 1 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+to enable
+
+echo 0 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+to disable
